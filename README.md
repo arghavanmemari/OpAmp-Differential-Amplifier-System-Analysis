@@ -1,31 +1,44 @@
 # Op-Amp Differential Amplifier System Analysis
 
 ![LTspice](https://img.shields.io/badge/Simulation-LTspice-blue)
-![Project](https://img.shields.io/badge/Field-Electrical%20Engineering-green)
-![Status](https://img.shields.io/badge/Status-Completed-success)
+![Electrical Engineering](https://img.shields.io/badge/Field-Electrical%20Engineering-green)
+![Project Status](https://img.shields.io/badge/Status-Completed-success)
 
-## Overview
+---
 
-This project presents a comprehensive electrical analysis and simulation of an operational amplifier differential amplifier system using LTspice.
+# Overview
 
-The objective of this work is to investigate the dynamic and steady-state behavior of the amplifier circuit through different simulation approaches, including transient response, frequency behavior, impulse response, input impedance evaluation, and power analysis.
+This project presents the electrical analysis and LTspice simulation of an operational amplifier differential amplifier system.
 
-The complete circuit model, simulation files, documentation, presentation materials, and obtained results are included in this repository.
+The main purpose of this project is to investigate the dynamic and steady-state behavior of the amplifier circuit using different simulation techniques.
+
+The analysis includes:
+
+- Transient response
+- Step response
+- Impulse response
+- Sinusoidal response
+- Input impedance analysis
+- Current analysis
+- Power analysis
+
+All simulation files, results, documentation, and presentation materials are included in this repository.
 
 ---
 
 # Circuit Description
 
-The analyzed system consists of:
+The designed system consists of:
 
 - Operational amplifier model
-- Differential input configuration
+- Differential input stage
 - Feedback network
-- Resistive and capacitive elements
+- Resistive elements
+- Capacitive elements
 - Input signal sources
-- Output loading network
+- Output load
 
-The circuit behavior is studied under different excitation conditions to evaluate amplifier performance and stability.
+The circuit performance is evaluated under different input conditions to analyze stability, response characteristics, and electrical behavior.
 
 ---
 
@@ -33,84 +46,104 @@ The circuit behavior is studied under different excitation conditions to evaluat
 
 ## Software
 
-- LTspice XVII
+**LTspice XVII**
 
-## Analysis Methods
+## Analysis Performed
 
-The following simulations were performed:
+### Transient Analysis
 
-### 1. Transient Analysis
+The time-domain response of the amplifier was investigated to observe:
 
-Evaluation of the time-domain response of the amplifier system.
-
-Purpose:
-
-- Observe dynamic behavior
-- Analyze charging/discharging effects
-- Evaluate settling characteristics
+- Dynamic behavior
+- Stabilization process
+- Output variation with time
 
 
-### 2. Step Response Analysis
+### Step Response
 
-The response of the system to a step input signal was investigated.
+The response of the system to a step input signal was analyzed.
 
 Parameters evaluated:
 
 - Rise behavior
 - Output transition
-- System stability
+- System response
 
 
-### 3. Impulse Response Analysis
+### Impulse Response
 
-The impulse response was simulated to study the natural response characteristics of the amplifier.
+The impulse response was simulated to study the natural dynamic characteristics of the circuit.
 
-This analysis helps evaluate:
+This analysis provides information about:
 
-- Dynamic properties
-- System response speed
+- System behavior
+- Response speed
 - Transient characteristics
 
 
-### 4. Sinusoidal Response Analysis
+### Sinusoidal Response
 
-A sinusoidal input signal was applied to analyze:
+A sinusoidal input signal was applied to evaluate:
 
-- Output waveform behavior
-- Gain characteristics
-- Signal reproduction quality
+- Output waveform
+- Signal reproduction
+- Current behavior
 
 
-### 5. Input Impedance Analysis
+### Input Impedance Analysis
 
-The input impedance of the system was evaluated by applying test signals and analyzing the resulting voltage-current relationship.
+The input impedance of the system was evaluated through voltage-current analysis.
+
+---
+
+# Circuit Schematic
+
+The LTspice circuit model is shown below:
+
+![Circuit Schematic](Images/شماتیک%20مدار.png)
 
 ---
 
 # Simulation Results
 
-The obtained results include:
+## Step Response
 
-## Output Voltage Response
-
-Analysis of the output waveform under different input conditions.
-
-## Input Current Behavior
-
-Evaluation of current variations during operation.
-
-## Transient Characteristics
-
-Investigation of:
-
-- Initial response
-- Stabilization time
-- Dynamic behavior
+![Step Response](Images/پاسخ%20پله.png)
 
 
-## Power Analysis
+## Zero Input Response
 
-Power behavior of circuit elements was evaluated, including capacitor energy interaction and load characteristics.
+![Zero Input Response](Images/پاسخ%20ورودی%20صفر.png)
+
+
+## Impulse Response
+
+![Impulse Response](Images/پاسخ%20ضربه.png)
+
+
+## Sinusoidal Output Voltage
+
+![Sinusoidal Output Voltage](Images/ولتاژ%20خروجی%20سینوسی.png)
+
+
+## Sinusoidal Input Current
+
+![Sinusoidal Input Current](Images/جریان%20ورودی%20سینوسی.png)
+
+
+## Steady State Sinusoidal Response
+
+![Steady State Sinusoidal Response](Images/حالت%20دائمی%20سینوسی.png)
+
+
+## Input Impedance Analysis
+
+![Input Impedance Analysis](Images/امپدانس%20ورودی.png)
+
+
+## Capacitor C1 Power Analysis
+
+![Capacitor Power Analysis](Images/توان%20بار%20(خازن%20C1).png)
 
 ---
 
@@ -125,57 +158,73 @@ OpAmp-Differential-Amplifier-System-Analysis
 │   └── README.md
 │
 ├── Images
-│   ├── Circuit Diagram
-│   ├── Simulation Results
-│   └── Graphs
+│   ├── شماتیک مدار.png
+│   ├── پاسخ پله.png
+│   ├── پاسخ ورودی صفر.png
+│   ├── پاسخ ضربه.png
+│   ├── ولتاژ خروجی سینوسی.png
+│   ├── جریان ورودی سینوسی.png
+│   ├── حالت دائمی سینوسی.png
+│   ├── امپدانس ورودی.png
+│   └── توان بار (خازن C1).png
 │
 ├── LTspice
 │   ├── OpAmp_Differential_Amplifier.asc
 │   └── Simulation Files
 │
 ├── Presentation
-│   ├── Project Presentation.pdf
-│   └── Project Presentation.pptx
+│   ├── پروژه مدار های الکتریکی (1).pdf
+│   └── پروژه مدار های الکتریکی (1).pptx
 │
 └── README.md
 ```
 
 ---
 
-# Circuit Diagram
+# Files Description
 
-The LTspice schematic file is provided in the `LTspice` directory.
+## LTspice Folder
 
-Users can open the `.asc` file directly in LTspice and reproduce the simulations.
+Contains the circuit simulation files:
+
+- `.asc` schematic file
+- LTspice simulation model
+
+
+## Documentation Folder
+
+Contains:
+
+- Complete project report
+- Technical explanations
+- Simulation discussion
+
+
+## Presentation Folder
+
+Contains project presentation files:
+
+- PDF format
+- PowerPoint format
+
+
+## Images Folder
+
+Contains all simulation graphs and obtained results.
 
 ---
 
-# Results Preview
+# Project Report
 
-Simulation outputs include:
+The complete technical report includes:
 
-- Transient response plots
-- Step response plots
-- Impulse response plots
-- Sinusoidal waveform analysis
-- Input current measurements
-- Power evaluation graphs
-
-Detailed images are available in the `Images` directory.
-
----
-
-# Documentation
-
-A complete project report is provided containing:
-
-- Circuit explanation
+- Circuit design explanation
+- Simulation methodology
 - Mathematical analysis
-- Simulation procedure
-- Results discussion
+- Obtained results
 - Conclusions
 
-Available in:
+Available at:
 
 ```
 Documentation/Project_Report.pdf
@@ -183,26 +232,13 @@ Documentation/Project_Report.pdf
 
 ---
 
-# Presentation
-
-Presentation files are included for academic demonstration:
-
-```
-Presentation/
-```
-
-Formats:
-
-- PDF
-- PowerPoint (.pptx)
-
----
-
 # Conclusion
 
-The project demonstrates the application of LTspice simulation techniques for analyzing an operational amplifier differential amplifier system.
+This project demonstrates the analysis and simulation of an operational amplifier differential amplifier system using LTspice.
 
-Through multiple simulation methods, the electrical behavior, dynamic response, stability characteristics, and performance parameters of the circuit were investigated.
+Different simulation approaches were performed to evaluate circuit behavior in time domain, frequency-related behavior, impedance characteristics, and power response.
+
+The results provide a complete understanding of the electrical performance and dynamic characteristics of the designed amplifier system.
 
 ---
 
@@ -216,4 +252,4 @@ Electrical Engineering Project
 
 # License
 
-This project is provided for educational and research purposes.
+This project is intended for educational and academic purposes.
