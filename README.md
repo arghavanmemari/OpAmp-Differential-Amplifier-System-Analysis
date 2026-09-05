@@ -245,7 +245,7 @@ The results provide a complete understanding of the electrical performance and d
 # Author
 
 - Arghavan Memari
-- Erfan Faghihi
+- Erfan Feghhi
 - Alireza Montajab
 
 Electrical Engineering Project
